@@ -6,7 +6,6 @@ bahan yang diperlukan:
 -rain sensor module/sensor hujan
 -light sensor mudule/sensor cahaya
 -servo sg90(servo)
--modul micro usb untuk power externaal servo
--breadboard/projectboard untuk memparalel kabel
+-minibreadboard/projectboard untuk memparalel kabel
 -kabel jumper
--multitester
+-spacer
