@@ -16,8 +16,8 @@
 Servo servo1;
 
 // inialisasi pin sensor
-const int pinHujan = 2;
-const int pinLdr = 3;
+const int pinHujan = 3;
+const int pinLdr = 2;
 
 // inialisasi pembacaan sensor
 int hujan, cahaya;
