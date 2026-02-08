@@ -10,14 +10,14 @@
 
 
 // memanggil library motor servo
-#include <Servo.h>
+#include <ESP32Servo.h>
 
 // inialisasi servo
 Servo servo1;
 
 // inialisasi pin sensor
-const int pinHujan = 2;
-const int pinLdr = 3;
+const int pinHujan = 4;
+const int pinLdr = 2;
 
 // inialisasi pembacaan sensor
 int hujan, cahaya;
@@ -35,7 +35,7 @@ void setup() {
   Serial.begin(9600);
 
   // inialisasi pin servo
-  servo1.attach(4);
+  servo1.attach(13);
 
   // inialisasi status input/output pin
   pinMode(pinHujan, INPUT);
