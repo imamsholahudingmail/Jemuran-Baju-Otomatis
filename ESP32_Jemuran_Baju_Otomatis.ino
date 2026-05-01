@@ -17,7 +17,7 @@ Servo servo1;
 
 // inialisasi pin sensor
 const int pinHujan = 4;
-const int pinLdr = 2;
+const int pinLdr = 15;
 
 // inialisasi pembacaan sensor
 int hujan, cahaya;
@@ -53,8 +53,10 @@ void loop() {
 
   // menulis pada serial monitor pembacaan sensor hujan dan cahaya
   // hasil output data sensor bisa dilihat di serial monitor arduino
+  Serial.print("hujan ");
   Serial.print(hujan);
   Serial.print(" ");
+  Serial.print("cahaya ");
   Serial.println(cahaya);
   Serial.println(" ");
 
