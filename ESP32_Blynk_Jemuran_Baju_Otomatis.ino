@@ -55,7 +55,7 @@ void sendSensorData() {
   // jika kondisi hujan dan mendung
   if (nilaiRain == 0 && nilaiLDR == 1) {
     // servo menutup
-    servo1.write(tutup);
+    myservo.write(tutup);
     Blynk.virtualWrite(V3, "Kondisi: AMAN (Tertutup)");
   }
 
@@ -63,7 +63,7 @@ void sendSensorData() {
   // jika kondisi hujan
   else if (nilaiRain == 0 && nilaiLDR == 0) {
     // servo menutup
-    servo1.write(tutup);
+    myservo.write(tutup);
     Blynk.virtualWrite(V3, "Kondisi: AMAN (Tertutup)");
   }
 
@@ -73,7 +73,7 @@ void sendSensorData() {
   else if (nilaiRain == 1 && nilaiLDR == 1) {
     // servo menutup
 
-    servo1.write(tutup);
+    myservo.write(tutup);
     Blynk.virtualWrite(V3, "Kondisi: AMAN (Tertutup)");
   }
 
@@ -82,7 +82,7 @@ void sendSensorData() {
   // jika kondisi tidak hujan dan tidak mendung
   else if (nilaiRain == 1 && nilaiLDR == 0) {
     // servo membuka
-    servo1.write(buka);
+    myservo.write(buka);
     Blynk.virtualWrite(V3, "Kondisi: MENJEMUR (Terbuka)");
   }
 }
