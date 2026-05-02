@@ -48,7 +48,6 @@ void sendSensorData() {
   Serial.println(nilaiLDR);
   Serial.println(" ");
 
-
   // sensor hujan akan bernilai = 0 saat ada air
   // sensor Cahaya akan bernilai = 1 saat gelap
   // dan berlaku sebaliknya
@@ -72,11 +71,9 @@ void sendSensorData() {
   // jika kondisi mendung
   else if (nilaiRain == 1 && nilaiLDR == 1) {
     // servo menutup
-
     myservo.write(tutup);
     Blynk.virtualWrite(V3, "Kondisi: AMAN (Tertutup)");
   }
-
 
   //==================================================
   // jika kondisi tidak hujan dan tidak mendung
